@@ -1,8 +1,14 @@
 package src.lib.interfaces;
 
-import java.io.IOException;
+import java.io.File;
+import java.util.Scanner;
 
 public interface FileHandler {
+    void createFile(String filename);
 
-    void newFile() throws IOException;
+    void writeFile(File file, String content);
+
+    void editFile(Scanner scanner, File file);
+
+    void readFile(File file);
 }

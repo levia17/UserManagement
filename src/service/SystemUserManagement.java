@@ -22,7 +22,7 @@ public class SystemUserManagement implements SystemUserManagementHandler {
             String[] parts = input.split("\\s+");
 
             String command = parts[0];
-            exit = CommandUtils.Choose(command, parts);
+            exit = CommandUtils.Choose(this.scanner, command, parts);
         }
 
         scanner.close();
