@@ -1,9 +1,9 @@
-package service;
+package src.service;
 
 import java.io.File;
 
-import lib.interfaces.*;
-import utils.FileUtils;
+import src.lib.interfaces.*;
+import src.utils.FileUtils;
 
 public class FileInteraction implements FileHandler {
     private String name;
@@ -23,11 +23,6 @@ public class FileInteraction implements FileHandler {
     }
 
     public void newFile() {
-        fileUtils.createFile(file);
-    }
-
-    public void writeFile(String content) {
-
     }
 
 }

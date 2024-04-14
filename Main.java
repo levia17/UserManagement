@@ -1,17 +1,11 @@
-import java.io.File;
+import java.util.Scanner;
 
-import service.*;
+import src.service.SystemUserManagement;
 
-/**
- * Main
- */
 public class Main {
     public static void main(String[] args) {
-        // Create FileInteraction instance with a base filename of "test"
-        FileInteraction test = new FileInteraction("test", ".dat");
-
-        // Create a new text file named "test.txt"
-        test.newFile();
+        Scanner scanner = new Scanner(System.in);
+        SystemUserManagement system = new SystemUserManagement(scanner);
+        system.Init();
     }
-
 }
