@@ -11,6 +11,7 @@ import src.utils.system.CommandUtils;
  */
 public class SystemUserManagement implements SystemUserManagementHandler {
     private final Scanner scanner;
+    private final CommandUtils commandUtils;
 
     /**
      * Constructor for SystemUserManagement.
@@ -19,6 +20,7 @@ public class SystemUserManagement implements SystemUserManagementHandler {
      */
     public SystemUserManagement(Scanner scanner) {
         this.scanner = scanner;
+        this.commandUtils = new CommandUtils();
     }
 
     /**
@@ -45,7 +47,7 @@ public class SystemUserManagement implements SystemUserManagementHandler {
             String[] parts = input.split("\\s+");
             String command = parts[0].toLowerCase();
             
-            exit = CommandUtils.Choose(this.scanner, command, parts);
+            exit = commandUtils.choose(this.scanner, command, parts);
         }
 
         System.out.println("Thank you for using User Management System!");

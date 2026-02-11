@@ -15,5 +15,5 @@ public interface CommandHandler {
      * @param parts the command split into parts (command and arguments)
      * @return true if the application should exit, false otherwise
      */
-    boolean processCommand(Scanner scanner, String command, String[] parts);
+    boolean choose(Scanner scanner, String command, String[] parts);
 } 
