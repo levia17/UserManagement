@@ -151,7 +151,7 @@ case "help":
     printHelp();
     return false;
 
-private static void printHelp() {
+private void printHelp() {
     System.out.println("\n--- Available Commands ---");
     System.out.println("crf <filename>              - Create a new file");
     // ... more commands
@@ -217,7 +217,7 @@ public interface CommandHandler {
     /**
      * Processes a command with its arguments.
      */
-    boolean processCommand(Scanner scanner, String command, String[] parts);
+    boolean choose(Scanner scanner, String command, String[] parts);
 }
 ```
 
