@@ -1,5 +1,11 @@
 package src.lib.interfaces;
 
+/**
+ * Interface for system user management handler.
+ */
 public interface SystemUserManagementHandler {
-    void Init();
+    /**
+     * Initializes the user management system.
+     */
+    void init();
 }
