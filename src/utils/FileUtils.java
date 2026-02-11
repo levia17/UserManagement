@@ -7,6 +7,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
+import java.util.regex.PatternSyntaxException;
 
 import src.lib.interfaces.FileHandler;
 
@@ -102,7 +103,7 @@ public class FileUtils implements FileHandler {
         } catch (IOException e) {
             System.out.println("Error reading file: " + e.getMessage());
             return;
-        } catch (java.util.regex.PatternSyntaxException e) {
+        } catch (PatternSyntaxException e) {
             System.out.println("Error: Invalid search pattern. Please use valid text or regex.");
             return;
         }

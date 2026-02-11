@@ -66,28 +66,28 @@ java Main
 
 ### Creating a File
 ```
-Command: crf myfile.txt
-File created: myfile.txt
+Command: crf my_file.txt
+File created: my_file.txt
 ```
 
 ### Writing to a File
 ```
-Command: wrf myfile.txt Hello World
-Successfully wrote to the file: myfile.txt
+Command: wrf my_file.txt Hello World
+Successfully wrote to the file: my_file.txt
 ```
 
 ### Reading a File
 ```
-Command: rdf myfile.txt
+Command: rdf my_file.txt
 
---- File Contents: myfile.txt ---
+--- File Contents: my_file.txt ---
 Hello World
 --- End of File ---
 ```
 
 ### Editing a File
 ```
-Command: edf myfile.txt
+Command: edf my_file.txt
 Enter text to replace: 
 World
 Enter replacement text: 
